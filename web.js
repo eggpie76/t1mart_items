@@ -20,8 +20,8 @@ db.connect((err) => {
 });
 
 // 바코드로 제품 정보 검색 API
-app.get("/good/:barcode", (req, res) => {
-    const barcode = req.params.barcode;
+// app.get("/good/:barcode", (req, res) => {
+//     const barcode = req.params.barcode;
     /*
     const query = "SELECT * FROM goods";
     db.query(query, [barcode], (err, results) => {
@@ -39,8 +39,8 @@ app.get("/good/:barcode", (req, res) => {
         res.json(results[0]);
     });
 */
-    res.json(barcode);
-});
+    res.json("hi");
+// });
 
 const PORT = process.env.PORT || 8001; // Cafe24에서 제공하는 포트 사용
 app.listen(PORT, () => {
