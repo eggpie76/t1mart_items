@@ -39,12 +39,12 @@ const createTableQuery = `
 `;
 
 // 테이블 삭제
-connection.query(dropTableQuery, (err, results) => {
-  if (err) {
-    console.error('테이블 삭제 실패:', err.message);
-    return;
-  }
-  console.log('기존 테이블이 삭제되었습니다.');
+//connection.query(dropTableQuery, (err, results) => {
+//  if (err) {
+//    console.error('테이블 삭제 실패:', err.message);
+//    return;
+//  }
+//  console.log('기존 테이블이 삭제되었습니다.');
 
   // 새 테이블 생성
   connection.query(createTableQuery, (err, results) => {
