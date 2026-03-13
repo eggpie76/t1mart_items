@@ -22,7 +22,7 @@ db.connect((err) => {
 // 바코드로 제품 정보 검색 API
 app.get("/good/:barcode", (req, res) => {
     const barcode = req.params.barcode;
-    const query = "SELECT * FROM goods WHERE barcode = ?";
+    const query = "SELECT * FROM goods";
     db.query(query, [barcode], (err, results) => {
         if (err) {
             console.error("Error executing query:", err);
