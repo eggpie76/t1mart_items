@@ -4,9 +4,9 @@ const http = require("http");
 // 데이터베이스 연결 설정
 const connection = mysql.createConnection({
   host: '10.0.0.1', // Cafe24에서 제공하는 DB 호스트
-  user: 'martcalctest', // DB 사용자 이름
+  user: 'test1mart', // DB 사용자 이름
   password: 'backery12!', // DB 비밀번호
-  database: 'martcalctest' // DB 이름
+  database: 'test1mart' // DB 이름
 });
 
 // 데이터베이스 연결
